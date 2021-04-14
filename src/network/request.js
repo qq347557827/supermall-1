@@ -10,15 +10,12 @@ export function request(config) {
 
   //2.使用拦截
   instance.interceptors.request.use(config => {
-    // console.log(config);
     return config;
   },err => {
     // console.log(err);
   })
 
   instance.interceptors.response.use(response => {
-    // console.log(response);
-
     return response.data
   },err => {
     console.log(err);

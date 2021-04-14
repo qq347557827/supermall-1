@@ -3,7 +3,7 @@
     <div
       class="recommend-item"
       v-for="item in recommends"
-      :key="item.acm"
+      :key="item.sort"
     >
       <a :href="item.link">
         <img :src="item.image" :alt="item.title" />
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Vue from 'vue'
+
 export default {
   name: 'RecommendView',
   props: {
